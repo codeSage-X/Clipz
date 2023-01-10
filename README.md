@@ -53,6 +53,9 @@ For more info look up:
 
 https://angular.io/guide/content-projection
 
+Regex
+https://regexr.com/
+
 
 
 
