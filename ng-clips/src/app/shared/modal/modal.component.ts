@@ -16,7 +16,7 @@ export class ModalComponent implements OnInit {
    }
 
   ngOnInit(): void {
-    document.body.appendChild(this.el.nativeElement)
+    // document.body.appendChild(this.el.nativeElement)
   }
 
   closeModal($event:MouseEvent){

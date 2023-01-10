@@ -22,8 +22,9 @@ import { ReactiveFormsModule } from '@angular/forms';
   exports: [
     ModalComponent,
     TabsContainerComponent,
-    TabComponent,
     InputComponent,
+    TabComponent,
+    ReactiveFormsModule
     // NgxMaskModule.forRoot() 
   ],
 })

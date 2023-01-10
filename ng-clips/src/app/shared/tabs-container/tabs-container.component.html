@@ -4,12 +4,12 @@
       <a *ngFor="let tab of tabs" class="block rounded py-3 px-4 transition hover:text-white text-white
         bg-indigo-400" href="#" (click)="selectTab(tab)"
         [ngClass]="{ 'hover:text-indigo-400': !tab.active,
-        'hover:text-white text-whiite bg-indigo-400': tab.active}">{{tab.tabTitle}}</a>
+        'hover:text-white text-white bg-indigo-400': tab.active}">{{tab.tabTitle}}</a>
     </li>
-    <li class="flex-auto text-center">
+    <!-- <li class="flex-auto text-center">
       <a class="block rounded py-3 px-4 transition hover:text-indigo-400" 
         href="#">Register</a>
-    </li> 
+    </li>  -->
   </ul>
 
   <ng-content></ng-content>

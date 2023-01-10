@@ -31,13 +31,30 @@ Ways to make a class injectable.
 Component interaction 
 
 Shared modal
-# create modal service. create 4 methods, register, unregister, close and toggle modal. then create an interface and pass an id. the id property is used to distinguish which modal is initialized onclick.
+# Create modal service, create 4 methods, register, unregister, close and toggle modal. then create an interface and pass an id. 
+
+# The id property is used to distinguish which modal is initialized based onclick.
+# next the modal component and write the model content inside the next tag.
+For refrence: src/app/user/auth-modal
 
 Memory Leak
 # A memory leak is a type of resource leak caused by poor management of memory allocation in a way that is not cleared from the memory when is not needed anymore. The memory leak is one of the worst problems developers could have since it is very difficult to debug and catch.
 
 # Ways to handle memory leaks:
-# Async pipe
+# Async pipe, OnDestroy
+
+For more info look up:
+# https://www.amplifyre.com/articles/2-best-ways-prevent-memory-leaks-in-angular
+
+Content projection:
+# is a pattern in which you insert, or project, the content you want to use inside another component. For example, you could have a Card component that accepts content provided by another component.
+
+For more info look up:
+
+https://angular.io/guide/content-projection
+
+
+
 
 
 
