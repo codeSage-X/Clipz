@@ -8,6 +8,12 @@ import { NavComponent } from './nav/nav.component';
 import { UserModule } from './user/user.module';
 import { SharedModule } from './shared/shared.module';
 
+// import { initializeApp } from 'firebase/app';
+import { AngularFireModule } from '@angular/fire/compat';
+import { environment } from 'src/environments/environment';
+import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+
+
 
 @NgModule({
   declarations: [
@@ -17,10 +23,11 @@ import { SharedModule } from './shared/shared.module';
     BrowserModule,
     AppRoutingModule,
     UserModule,
-    SharedModule
-    
+    SharedModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireAuthModule
   ],
-  providers: [],
+   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
