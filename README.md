@@ -57,7 +57,7 @@ Regex
 https://regexr.com/
 
 
-
+https://github.com/angular/angularfire/blob/master/docs/auth/getting-started.md
 
 
 

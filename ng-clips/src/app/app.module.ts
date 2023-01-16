@@ -13,8 +13,6 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { environment } from 'src/environments/environment';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 
-
-
 @NgModule({
   declarations: [
     AppComponent,  NavComponent, 
@@ -30,4 +28,6 @@ import { AngularFireAuthModule } from '@angular/fire/compat/auth';
    providers: [],
   bootstrap: [AppComponent]
 })
+
+
 export class AppModule { }
