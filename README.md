@@ -53,11 +53,19 @@ For more info look up:
 
 https://angular.io/guide/content-projection
 
+
+Resourceful links
+
 Regex
 https://regexr.com/
 
+#Firebase
 
 https://github.com/angular/angularfire/blob/master/docs/auth/getting-started.md
 
 
+https://firebase.google.com/docs/reference/js/auth#createuserwithemailandpassword
+
+
+https://firebase.google.com/docs/reference/rules/rules.firestore.Request#auth
 

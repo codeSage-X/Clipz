@@ -16,7 +16,8 @@ export class AuthService {
     private auth: AngularFireAuth,
     private db: AngularFirestore
   ) { 
-    this.usersCollection = db.collection('users')
+    this.usersCollection = db.collection('users');
+    auth.user.subscribe(console.log)
   }
 
   public async createUser(userData: IUser) {
@@ -24,6 +25,7 @@ export class AuthService {
   //   throw new Error("password not provided!");
   //  }
 
+  // register user
     const userCred = await this.auth.createUserWithEmailAndPassword(
       userData.email as string, userData.password as string
     )
@@ -32,6 +34,7 @@ export class AuthService {
       throw new Error("User can't be found")
     }
 
+    //insert to the DB
     await this.usersCollection.doc(userCred.user.uid).set({
      name: userData.name,
      email: userData.email,
