@@ -9,12 +9,12 @@ import { AuthService } from '../services/auth.service';
 })
 export class NavComponent implements OnInit {
 
-  isAuthenticated = false;
+  // isAuthenticated = false;
 
-  constructor(private modal: ModalService, private auth: AuthService) {
-    this.auth.isAuthenticated$.subscribe(status => {
-       this.isAuthenticated = status
-    })
+  constructor(private modal: ModalService, public auth: AuthService) {
+    // this.auth.isAuthenticated$.subscribe(status => {
+    //    this.isAuthenticated = status
+    // })
    }
 
   ngOnInit(): void {
