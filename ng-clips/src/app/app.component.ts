@@ -1,5 +1,6 @@
 import { ThisReceiver } from '@angular/compiler';
 import { Component } from '@angular/core';
+import { AuthService } from './services/auth.service';
 // import { ModalService } from './services/modal.service';
 // import { AuthModalComponent } from './user/auth-modal/auth-modal.component';
 
@@ -12,7 +13,7 @@ export class AppComponent {
   title = 'clips';
   // showModal = true;
 
-  // constructor(public modal: ModalService){}
+  constructor(public auth:AuthService){}
 
   // ngOnInit(){
   //   setInterval(
