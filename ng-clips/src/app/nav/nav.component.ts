@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalService } from '../services/modal.service';
+import { AuthService } from '../services/auth.service';
 
 @Component({
   selector: 'app-nav',
@@ -8,7 +9,13 @@ import { ModalService } from '../services/modal.service';
 })
 export class NavComponent implements OnInit {
 
-  constructor(private modal: ModalService) { }
+  isAuthenticated = false;
+
+  constructor(private modal: ModalService, private auth: AuthService) {
+    this.auth.isAuthenticated$.subscribe(status => {
+       this.isAuthenticated = status
+    })
+   }
 
   ngOnInit(): void {
   }
