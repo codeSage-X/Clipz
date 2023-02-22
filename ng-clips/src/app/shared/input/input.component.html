@@ -29,7 +29,10 @@
             <p *ngIf="control.errors?.['max']" class="text-green-400">
                 value too high
             </p>
-            <p *ngIf="control.errors?.['noMatch']" class="text-green-400">
+            <p *ngIf="control.errors?.['noMatch']" class="text-red-400">
                 Passwords do not match
+            </p>
+            <p *ngIf="control.errors?.['emailTaken']" class="text-red-400">
+               Email is already taken
             </p>
         </ng-container>
