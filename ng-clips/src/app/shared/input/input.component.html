@@ -29,4 +29,7 @@
             <p *ngIf="control.errors?.['max']" class="text-green-400">
                 value too high
             </p>
+            <p *ngIf="control.errors?.['noMatch']" class="text-green-400">
+                Passwords do not match
+            </p>
         </ng-container>
