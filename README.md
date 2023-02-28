@@ -69,3 +69,5 @@ https://firebase.google.com/docs/reference/js/auth#createuserwithemailandpasswor
 
 https://firebase.google.com/docs/reference/rules/rules.firestore.Request#auth
 
+
+https://angular.io/api/router/Route
