@@ -17,10 +17,11 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { VideoModule } from './video/video.module';
 import { ManageComponent } from './video/manage/manage.component';
+import { ClipComponent } from './clip/clip.component';
 // import { UploadComponent } from './video/upload/upload.component';
 @NgModule({
   declarations: [
-    AppComponent, NavComponent, HomeComponent, AboutComponent, ManageComponent, 
+    AppComponent, NavComponent, HomeComponent, AboutComponent, ManageComponent, ClipComponent, 
   ],
   imports: [
     BrowserModule,
