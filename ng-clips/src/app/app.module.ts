@@ -17,9 +17,10 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { VideoModule } from './video/video.module';
 import { ManageComponent } from './video/manage/manage.component';
+// import { UploadComponent } from './video/upload/upload.component';
 @NgModule({
   declarations: [
-    AppComponent,  NavComponent, HomeComponent, AboutComponent, ManageComponent, 
+    AppComponent, NavComponent, HomeComponent, AboutComponent, ManageComponent, 
   ],
   imports: [
     BrowserModule,
@@ -29,7 +30,7 @@ import { ManageComponent } from './video/manage/manage.component';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
     AngularFirestoreModule,
-    VideoModule
+    VideoModule,
   ],
    providers: [],
   bootstrap: [AppComponent]
